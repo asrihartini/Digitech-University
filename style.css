@@ -1,0 +1,163 @@
+:root {
+  --bg: #fefaf6;
+  --card: #ffffff;
+  --primary: #dcb5ff;
+  --secondary: #ffcce7;
+  --text: #4e4e4e;
+  --heading: #c084fc;
+  --nav: #fff0f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--heading);
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: var(--heading);
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+}
+
+/* Konten utama */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.post {
+  background-color: var(--card);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(220, 181, 255, 0.2);
+  transition: transform 0.3s;
+}
+
+.post:hover {
+  transform: scale(1.02);
+}
+
+.post img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.post h2 {
+  color: var(--heading);
+  margin-top: 0;
+}
+
+.tanggal {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Form komentar */
+.komentar {
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(255, 204, 231, 0.2);
+}
+
+.komentar h3 {
+  color: var(--heading);
+  margin-bottom: 1rem;
+}
+
+.komentar input,
+.komentar textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+.komentar button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.komentar button:hover {
+  background-color: var(--heading);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 3rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
