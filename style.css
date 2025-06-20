@@ -21,7 +21,6 @@ body {
   line-height: 1.6;
 }
 
-/* Navigasi */
 nav {
   display: flex;
   justify-content: space-between;
@@ -56,7 +55,6 @@ nav {
   color: var(--heading);
 }
 
-/* Header */
 header {
   background: linear-gradient(to right, var(--primary), var(--secondary));
   color: #fff;
@@ -65,81 +63,20 @@ header {
   border-radius: 0 0 30px 30px;
 }
 
-/* Konten utama */
 main {
   padding: 2rem;
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
 }
 
-.post {
-  background-color: var(--card);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(220, 181, 255, 0.2);
-  transition: transform 0.3s;
-}
-
-.post:hover {
-  transform: scale(1.02);
-}
-
-.post img {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 1rem;
-}
-
-.post h2 {
-  color: var(--heading);
-  margin-top: 0;
-}
-
-.tanggal {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 1rem;
-}
-
-/* Form komentar */
-.komentar {
+section {
   background-color: var(--card);
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(255, 204, 231, 0.2);
+  box-shadow: 0 4px 8px rgba(220, 181, 255, 0.2);
+  margin-top: 2rem;
 }
 
-.komentar h3 {
-  color: var(--heading);
-  margin-bottom: 1rem;
-}
-
-.komentar input,
-.komentar textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-family: inherit;
-}
-
-.komentar button {
-  background-color: var(--primary);
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.komentar button:hover {
-  background-color: var(--heading);
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -150,7 +87,6 @@ footer {
   margin-top: 3rem;
 }
 
-/* Responsif */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -161,3 +97,4 @@ footer {
     padding: 1rem;
   }
 }
+
